@@ -13,3 +13,7 @@ def index():
         hasil_nama = request.form.get('nama')
         hasil_pesan = request.form.get('pesan')
 
+    return render_template('index.html', nama=hasil_nama, pesan=hasil_pesan)
+
+if __name__ == '__main__':
+    app.run(debug=True)
